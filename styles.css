@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +11,119 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-/* nav */
+nav {
+    background-color: #292d35;
+    position: fixed;
+    width: 60%;
+    left: 20%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 80px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+nav li:not(:first-child) a:hover {
+    color: gold;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav li:first-child a {
+    cursor: default;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li,a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    nav{
+        width: 80%;
+        left: 10%
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.main-wrapper {
+    width: 100%;
+    background-color: #292d35;
+}
+
+.main {
+    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > *{
+    padding: 10px;
+    flex: 1 100%;
+    border: 10px;
+}
 
 .nav-wrapper {
     width: 100%;
@@ -67,10 +178,8 @@ nav a {
 .nav-name {
     font-size: 30px;
     font-weight: 800;
-    color: #F6FB7A
+    color: #EEEEEE
 }
-
-/* Main */
 
 .main-wrapper {
     width: 100%;
@@ -87,3 +196,4 @@ nav a {
 .main-image {
     height: 650px;
 }
+*/
