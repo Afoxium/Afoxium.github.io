@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Basic CSS Styling */
 * {
@@ -9,8 +9,10 @@
 
 body {
     min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
+
+/* nav */
 
 .nav-wrapper {
     width: 100%;
@@ -20,10 +22,9 @@ body {
 }
 
 nav {
-    background-color: aliceblue;
-    font-family: "Poppins", sans-serif;
-    box-shadow: 0 2px 10px lightgray;
+    font-family: "Noto Sans", sans-serif;
     padding: 20px;
+    color: #EEEEEE;
 }
 
 nav ul {
@@ -41,36 +42,48 @@ nav ul {
 }
 
 .left-items {
-    margin-left: 20px;
+    margin-left: 20%;
     gap: 15px;
 }
 
 .right-items {
-    margin-right: 40px;
+    margin-right: 20%;
 }
 
 .right-items li {
-    margin-left: 20px;
+    margin-left: 35px;
 }
 
 nav li {
     font-size: 15px;
-    font-weight: 250;
+    font-weight: 600;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #EEEEEE;
 }
 
 .nav-name {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 800;
+    color: #F6FB7A
 }
 
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: #ff6600;
-    border-radius: 50%;
+/* Main */
+
+.main-wrapper {
+    width: 100%;
+    background-color: #292d35;
+}
+
+.main {
+    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-image {
+    height: 650px;
 }
