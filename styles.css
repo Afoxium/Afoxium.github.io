@@ -1,6 +1,7 @@
+/* ------ F O N T S ------ */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Basic CSS Styling */
+/* ------ G L O B A L   S T Y L E S ------ */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+/* ------ N A V I G A T I O N   S T Y L E S ------ */
 nav {
     background-color: #292d35;
     position: fixed;
@@ -18,21 +20,21 @@ nav {
     left: 20%;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-nav li{
+nav li {
     height: 80px;
     font-size: 15px;
     font-weight: 600;
 }
 
-nav a{
+nav a {
     height: 100%;
     padding: 0 15px;
     text-decoration: none;
@@ -46,17 +48,20 @@ nav li:not(:first-child) a:hover {
     color: gold;
 }
 
-nav li:first-child{
+/* First Item Special Styling */
+nav li:first-child {
     margin-right: auto;
     font-size: 30px;
     font-weight: 800;
+    white-space: nowrap;
 }
 
 nav li:first-child a {
     cursor: default;
 }
 
-.sidebar{
+/* ------ T A B L E T   &   M O B I L E   S I D E B A R ------*/
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -71,35 +76,69 @@ nav li:first-child a {
     justify-content: flex-start;
 }
 
-.sidebar li,a{
+.sidebar li {
+    height: 40px;
     width: 100%;
 }
 
-.menu-button{
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    background-color: blue;
+}
+
+/* Sidebar Icons */
+.x-icon {
+    fill: #000000;
+}
+
+.sidebar li:hover .x-icon {
+    fill: gold;
+}
+
+.menu-button {
     display: none;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
+.menu-icon{
+    fill: #ffffff;
+}
+
+li:hover .menu-icon{
+    fill: gold;
+}
+
+/* Responsive Styles 
+-------------------------------------------------- */
+@media(max-width: 800px) {
+    /* Hide Elements on Mobile */
+    .hideOnMobile {
         display: none;
     }
 
-    nav{
+    /* Adjust Navigation Width */
+    nav {
         width: 80%;
-        left: 10%
+        left: 10%;
     }
 
-    .menu-button{
+    /* Show Menu Button */
+    .menu-button {
         display: block;
     }
 }
 
-@media(max-width: 400px){
-    .sidebar{
+@media(max-width: 400px) {
+    /* Full-Width Sidebar on Small Screens */
+    .sidebar {
         width: 100%;
     }
 }
 
+/* Main Content Wrapper
+-------------------------------------------------- */
 .main-wrapper {
     width: 100%;
     background-color: #292d35;
@@ -111,89 +150,3 @@ nav li:first-child a {
     align-items: flex-end;
     justify-content: center;
 }
-
-/*
-.wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
-
-.wrapper > *{
-    padding: 10px;
-    flex: 1 100%;
-    border: 10px;
-}
-
-.nav-wrapper {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-nav {
-    font-family: "Noto Sans", sans-serif;
-    padding: 20px;
-    color: #EEEEEE;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.left-items, .right-items {
-    display: flex;
-    align-items: center;
-}
-
-.left-items {
-    margin-left: 20%;
-    gap: 15px;
-}
-
-.right-items {
-    margin-right: 20%;
-}
-
-.right-items li {
-    margin-left: 35px;
-}
-
-nav li {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-nav a {
-    text-decoration: none;
-    color: #EEEEEE;
-}
-
-.nav-name {
-    font-size: 30px;
-    font-weight: 800;
-    color: #EEEEEE
-}
-
-.main-wrapper {
-    width: 100%;
-    background-color: #292d35;
-}
-
-.main {
-    height: 75vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.main-image {
-    height: 650px;
-}
-*/
