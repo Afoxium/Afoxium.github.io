@@ -174,7 +174,7 @@ li:hover .menu-icon{
 
 .portfolio-tile-wrapper{
     background-color: #0F7173;
-    height: 300vh;
+    height: auto;
 }
 
 .portfolio-tile {
@@ -184,11 +184,10 @@ li:hover .menu-icon{
 }
 
 .tile-wrapper{
-    padding: 100px 200px 0;
+    padding: 100px 200px 100px;
 }
 
 .tile-title{
-    color: #272932;
     font-size: 75px;
     display: flex;
     justify-content: center;
@@ -216,7 +215,6 @@ li:hover .menu-icon{
 .tile-text{
     width: 40%;
     padding-right: 50px;
-    color:  black;
     font-size: 18px;
     font-weight: 300;
 }
@@ -231,7 +229,6 @@ li:hover .menu-icon{
 .arrow svg{
     width: 75px;
     height: auto;
-    fill: #292d35;
 }
 
 /* ------ R E S P O N S I V E   S T Y L E S ------ */
