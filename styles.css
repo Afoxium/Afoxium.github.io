@@ -10,18 +10,17 @@
 body {
     min-height: 100vh;
     font-family: "Noto Sans", sans-serif;
+    background-color: #292d35;
 }
 
 /* ------ N A V I G A T I O N   S T Y L E S ------ */
 nav {
     background-color: #292d35;
-    position: fixed;
-    width: 60%;
-    left: 20%;
+    width: 100%;
 }
 
 nav ul {
-    width: 100%;
+    padding: 0 20%;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -40,7 +39,7 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: white;
+    color: #E7ECEF;
     box-sizing: border-box;
 }
 
@@ -60,7 +59,7 @@ nav li:first-child a {
     cursor: default;
 }
 
-/* ------ T A B L E T   &   M O B I L E   S I D E B A R ------*/
+/* ------ T A B L E T   &   M O B I L E   S I D E B A R ------ */
 .sidebar {
     position: fixed;
     top: 0;
@@ -68,7 +67,7 @@ nav li:first-child a {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: white;
+    background-color: #E7ECEF;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
@@ -103,15 +102,139 @@ nav li:first-child a {
 }
 
 .menu-icon{
-    fill: #ffffff;
+    fill: #E7ECEF;
 }
 
 li:hover .menu-icon{
     fill: gold;
 }
 
-/* Responsive Styles 
--------------------------------------------------- */
+/* ------ M A I N ------ */
+.main-wrapper {
+    width: 100%;
+    background-color: #292d35;
+}
+
+.main-wrapper-2{
+    padding: 80px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    overflow: hidden;
+}
+
+.intro-text {
+    color: #E7ECEF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.intro-text h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.intro-text h2{
+    font-weight: 400;
+}
+
+.intro-text h1{
+    font-weight: 600;
+    color: #CA054D;
+    text-shadow: 1px 1px 2px black;
+}
+
+.intro-text p {
+    font-size: 15px;
+    max-width: 80%;
+    padding-top: 20px;
+}
+
+.intro-pic{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-pic img{
+    width: 75%;
+    height: auto;
+}
+
+.portfolio-tile-wrapper{
+    background-color: #0F7173;
+    height: 300vh;
+}
+
+.portfolio-tile {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+
+.tile-wrapper{
+    padding: 100px 200px 0;
+}
+
+.tile-title{
+    color: #272932;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.tile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tile-graphic{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-graphic img{
+    width: 75%;
+    height: auto;
+}
+
+.tile-text{
+    width: 40%;
+    padding-right: 50px;
+    color:  black;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.arrow{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow svg{
+    width: 75px;
+    height: auto;
+    fill: #292d35;
+}
+
+/* ------ R E S P O N S I V E   S T Y L E S ------ */
 @media(max-width: 800px) {
     /* Hide Elements on Mobile */
     .hideOnMobile {
@@ -119,9 +242,8 @@ li:hover .menu-icon{
     }
 
     /* Adjust Navigation Width */
-    nav {
-        width: 80%;
-        left: 10%;
+    nav ul{
+        padding: 0 10%;
     }
 
     /* Show Menu Button */
@@ -135,18 +257,4 @@ li:hover .menu-icon{
     .sidebar {
         width: 100%;
     }
-}
-
-/* Main Content Wrapper
--------------------------------------------------- */
-.main-wrapper {
-    width: 100%;
-    background-color: #292d35;
-}
-
-.main {
-    height: 75vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
