@@ -180,7 +180,11 @@ li:hover .menu-icon{
 .portfolio-tile {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     min-height: 500px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .tile-wrapper{
@@ -194,41 +198,61 @@ li:hover .menu-icon{
     font-weight: 600;
 }
 
-.tile-content{
+.tile-content {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.tile-graphic{
+.tile-graphic {
     width: 60%;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tile-graphic img{
-    width: 75%;
+
+.tile-graphic img {
+    width: 70%;
     height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.tile-text{
+.tile-text {
     width: 40%;
-    padding-right: 50px;
+    max-height: 200px;
+    overflow: hidden;
+    padding-right: 20px;
     font-size: 18px;
     font-weight: 300;
 }
 
-.arrow{
-    width: 20%;
+/* Arrow Styling */
+.arrow {
+    width: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.arrow svg{
+.arrow-icon {
+    fill: currentColor;
+    transition: fill 0.3s ease;
+}
+
+.arrow svg {
     width: 75px;
     height: auto;
+}
+
+.tile-wrapper .arrow:hover .arrow-icon {
+    fill: var(--hover-color);
 }
 
 /* ------ R E S P O N S I V E   S T Y L E S ------ */
