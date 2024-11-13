@@ -11,18 +11,26 @@
 body {
     font-family: "Noto Sans", sans-serif;
     background-color: #292d35;
-    background-image: url(images/19742.jpg);
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Main content container */
 .container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
+
+    &__home{
+        background-image: url(images/19742.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__about{
+        background-image: url(images/19742.jpg);
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 /* ------ N A V I G A T I O N   S T Y L E S ------ */
@@ -32,7 +40,8 @@ nav {
 }
 
 nav ul {
-    padding: 0 20%;
+    max-width: 1300px;
+    margin: auto;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -120,15 +129,136 @@ li:hover .menu-icon{
     fill: gold;
 }
 
-/* ------ M A I N ------ */
+/* ------ H O M E ------ */
+.home{
+    &__wrapper{
+        width: 100%;
+        margin: 150px auto;
+        max-width: 1600px;
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left-content{
+        padding: 50px;
+
+        &__wrapper{
+            width: 30%;
+        }
+    }
+
+    &__profile-picture{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &img{
+            width: 100%;
+            height: auto;
+            max-height: 540px;
+            max-width: 540px;
+        }
+    }
+
+    &__right-content{
+        padding: 50px;
+
+        &__wrapper{
+            width: 30%;
+        }
+    }
+
+    &__title{
+        font-size: 50px;
+        text-wrap: nowrap;
+    }
+}
+
+/* ------ A B O U T ------ */
+.about{
+    &__wrapper{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1600px;
+        color: #292d35;
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__header{
+        width: 100%;
+        max-width: 1920px;
+        height: 400px;
+        background-image: url(images/FvI2Jz1WAAYQ5i1.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--title{
+            color: white;
+            font-size: 100px;	
+            text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 600px;
+        background-color: #FAF9F6;
+
+        &--text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+
+            h1 {
+                margin-top: -10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &--image{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 .main-wrapper {
     width: 100%;
     background-color: #292d35;
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .main-wrapper-2{
-    padding: 80px;
+    padding-top: 150px; 
+    padding-bottom: 150px;
+    max-width: 1600px;
 }
 
 .main {
@@ -136,7 +266,6 @@ li:hover .menu-icon{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15%;
     overflow: hidden;
 }
 
@@ -318,26 +447,28 @@ footer {
         display: flex;
         flex-direction: row;
         color: white;
-        gap: 150px;
     }
   
     &__section {
         flex: 1;
 
         &--about {
+            border-right: 1px solid #fff;
+
             p {
                 font-weight: 300;
                 font-size: 12px;
             }
         }
   
-        /*&--pages {
-            
-        }*/
+        &--pages {
+            margin-left: 50px; 
+            border-right: 1px solid #fff;
+        }
   
-        /*&--contact {
-            
-        }*/
+        &--contact {
+            margin-left: 50px;   
+        }
     }
   
     &__title {

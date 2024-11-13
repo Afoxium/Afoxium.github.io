@@ -27,48 +27,46 @@
 	</head>
 
 	<body>
-		<div class="container">
-
+		<div class="container container__home">
 			<!-- Navigation & Sidebar for mobile -->
 			<nav>
 				<ul class="sidebar">
 					<li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path class="x-icon" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<ul>
 					<li><a>Cole Barrett</a></li>
 					<li class="hideOnMobile"><a href="index.html">Home</a></li>
-					<li class="hideOnMobile"><a href="#">About</a></li>
+					<li class="hideOnMobile"><a href="about.html">About</a></li>
 					<li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
 					<li class="hideOnMobile"><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
-					<li class="hideOnMobile"><a href="#">Resume</a></li>
-					<li class="hideOnMobile"><a href="#">Contact</a></li>
+					<li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+					<li class="hideOnMobile"><a href="contact.html">Contact</a></li>
 					<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path class="menu-icon"d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 				</ul>
 			</nav>
 
-			<div class="main-wrapper" style="background-color: transparent;">
-				<div class="main-wrapper-2" style="padding-top: 150px; padding-bottom: 150px;">
-					<div class="main" style="padding: 0 5%">
-						<div class="left-content">
-							<div style="padding: 50px">
-								<h1>Hi! I'm-</h1>
-								<p>—Cole, an aspiring junior developer passionate about building creative, functional solutions in code.</p>
-							</div>	
+			<!-- Main -->
+			<div class="home__wrapper">
+				<div class="home__section">
+					<div class="home__left-content__wrapper">
+						<div class="home__left-content">
+							<h1 class="home__title">Hi! I'm-</h1>
+							<p>—Cole, an aspiring junior developer passionate about building creative, functional solutions in code.</p>
 						</div>
-						<div class="profile-picture">
-							<img src="images\Me Edited.png" alt="">
-						</div>
-						<div class="right-content">
-							<div style="padding: 50px">
-								<h1>Junior Developer</h1>
-								<p>Feel free to explore my portfolio and get in touch—I'm always open to new ideas and challenges!</p>
-							</div>	
+					</div>
+					<div class="home__profile-picture">
+						<img src="images\Me Edited.png" alt="">
+					</div>
+					<div class="home__right-content__wrapper">
+						<div class="home__right-content">
+							<h1 class="home__title">Junior Developer</h1>
+							<p>Feel free to explore my portfolio and get in touch—I'm always open to new ideas and challenges!</p>
 						</div>
 					</div>
 				</div>
@@ -84,10 +82,10 @@
 				</div>
 				<div class="footer__section footer__section--pages">
 					<h1 class="footer__title">PAGES</h1>
-					<a href="#" class="footer__link">About</a>
-					<a href="#" class="footer__link">Portfolio</a>
-					<a href="#" class="footer__link">GitHub</a>
-					<a href="#" class="footer__link">Resume</a>
+					<a href="about.html" class="footer__link">About</a>
+					<a href="portfolio.html" class="footer__link">Portfolio</a>
+					<a target="_blank" href="https://github.com/Afoxium" class="footer__link">GitHub</a>
+					<a href="resume.html" class="footer__link">Resume</a>
 				</div>
 				<div class="footer__section footer__section--contact">
 					<h1 class="footer__title">CONTACT</h1>

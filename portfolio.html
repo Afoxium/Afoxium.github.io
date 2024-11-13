@@ -27,298 +27,310 @@
 	</head>
 
 	<body>
-		<!-- Navigation & Sidebar for mobile -->
-		<nav>
-			<ul class="sidebar">
-				<li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path class="x-icon" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
-				<li><a href="#">Resume</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<ul>
-				<li><a>Cole Barrett</a></li>
-				<li class="hideOnMobile"><a href="index.html">Home</a></li>
-				<li class="hideOnMobile"><a href="#">About</a></li>
-				<li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
-				<li class="hideOnMobile"><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
-				<li class="hideOnMobile"><a href="#">Resume</a></li>
-				<li class="hideOnMobile"><a href="#">Contact</a></li>
-				<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path class="menu-icon"d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-			</ul>
-		</nav>
+		<div class="container">
 
-		<div class="main-wrapper">
-			<div class="main-wrapper-2">
-				<div class="main">
-					<div class="intro-text">
-						<h3>Hi!</h3>
-						<h2>This is my</h2>
-						<h1>Developer Portfolio</h1>
-						<p>Welcome to my coding portfolio, a collection of projects that capture my growth, creativity, and technical expertise developed over the past three years. Here, you’ll find a range of projects, from foundational applications to advanced builds, each representing key steps in my journey as a developer.</p>
+			<!-- Navigation & Sidebar for mobile -->
+			<nav>
+				<ul class="sidebar">
+					<li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path class="x-icon" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul>
+					<li><a>Cole Barrett</a></li>
+					<li class="hideOnMobile"><a href="index.html">Home</a></li>
+					<li class="hideOnMobile"><a href="about.html">About</a></li>
+					<li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+					<li class="hideOnMobile"><a target="_blank" href="https://github.com/Afoxium">GitHub</a></li>
+					<li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+					<li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+					<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path class="menu-icon"d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+				</ul>
+			</nav>
+
+			<div class="main-wrapper">
+				<div class="main-wrapper-2">
+					<div class="main">
+						<div class="intro-text">
+							<h3>Hi!</h3>
+							<h2>This is my</h2>
+							<h1>Developer Portfolio</h1>
+							<p>Welcome to my coding portfolio, a collection of projects that capture my growth, creativity, and technical expertise developed over the past three years. Here, you’ll find a range of projects, from foundational applications to advanced builds, each representing key steps in my journey as a developer.</p>
+						</div>
+						<div class="intro-pic">
+							<img src="images\elementor-placeholder-image.png" alt="">
+						</div>
 					</div>
-					<div class="intro-pic">
-						<img src="images\elementor-placeholder-image.png" alt="">
+				</div>
+
+				<div class="portfolio-tile-wrapper">
+
+					<!-- Game Tile -->
+					<div class="tile-wrapper" style="--hover-color: red; background-color: #0F7173; color: black;">
+						<div class="tile-title">
+							Game Placeholder - C#
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+
+							<!-- Slide #1 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									Game description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about game...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- To-Do Android App -->
+					<div class="tile-wrapper" style="--hover-color: gold; background-color: #CA054D; color: white;">
+						<div class="tile-title">
+							To-Do Android App - Dart
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+							
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									To-Do App description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about to-do app...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- Mining Bot -->
+					<div class="tile-wrapper" style="--hover-color: black; background-color: #DBD56E; color: #272932;">
+						<div class="tile-title">
+							Minecraft Automation - Python
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+							
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									Minecraft bot description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about the bot...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- Weather API App -->
+					<div class="tile-wrapper" style="--hover-color: black; background-color: #403D58; color: white;">
+						<div class="tile-title">
+							Weather API App - N/A
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+							
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									Weather App API description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about the app...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- PDF Client Project -->
+					<div class="tile-wrapper" style="--hover-color: black; background-color: #618B25; color: white;">
+						<div class="tile-title">
+							PDF Client Project - Python
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+							
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									PDF Thing description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about the PDF Thing...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- AI Thing? -->
+					<div class="tile-wrapper" style="--hover-color: black; background-color: #232020; color: white;">
+						<div class="tile-title">
+							AI Project? - N/A
+						</div>
+						<div class="portfolio-tile">
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+							</div>
+							
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									AI Thing description...
+								</div>
+							</div>
+
+							<!-- Slide #2 -->
+							<div class="tile-content">
+								<div class="tile-graphic">
+									<img src="images/elementor-placeholder-image.png" alt="">
+								</div>
+								<div class="tile-text">
+									More stuff about this AI thing...
+								</div>
+							</div>
+
+							<!-- Add More Slides Below -->
+
+							<div class="arrow">
+								<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-            <div class="portfolio-tile-wrapper">
-
-				<!-- Game Tile -->
-				<div class="tile-wrapper" style="--hover-color: red; background-color: #0F7173; color: black;">
-					<div class="tile-title">
-						Game Placeholder - C#
+			<!-- Footer -->
+			<footer>
+				<div class="footer__wrapper">
+					<div class="footer__section footer__section--about">
+						<h1 class="footer__title">ABOUT</h1>
+						<p class="footer__description">Explore a showcase of my projects, skills, and creative coding solutions.</p>
 					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-
-						<!-- Slide #1 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								Game description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about game...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
+					<div class="footer__section footer__section--pages">
+						<h1 class="footer__title">PAGES</h1>
+						<a href="index.html" class="footer__link">Home</a>
+						<a href="about.html" class="footer__link">About</a>
+						<a target="_blank" href="https://github.com/Afoxium" class="footer__link">GitHub</a>
+						<a href="resume.html" class="footer__link">Resume</a>
+					</div>
+					<div class="footer__section footer__section--contact">
+						<h1 class="footer__title">CONTACT</h1>
+						<a href="#" class="footer__contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+								<path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+							</svg>
+						</a>
+						<a href="#" class="footer__contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+								<path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+							</svg>
+						</a>
 					</div>
 				</div>
+			</footer>
 
-				<!-- To-Do Android App -->
-				<div class="tile-wrapper" style="--hover-color: gold; background-color: #CA054D; color: white;">
-					<div class="tile-title">
-						To-Do Android App - Dart
-					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-						
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								To-Do App description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about to-do app...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
-					</div>
-				</div>
-
-				<!-- Mining Bot -->
-				<div class="tile-wrapper" style="--hover-color: black; background-color: #DBD56E; color: #272932;">
-					<div class="tile-title">
-						Minecraft Automation - Python
-					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-						
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								Minecraft bot description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about the bot...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
-					</div>
-				</div>
-
-				<!-- Weather API App -->
-				<div class="tile-wrapper" style="--hover-color: black; background-color: #403D58; color: white;">
-					<div class="tile-title">
-						Weather API App - N/A
-					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-						
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								Weather App API description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about the app...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
-					</div>
-				</div>
-
-				<!-- PDF Client Project -->
-				<div class="tile-wrapper" style="--hover-color: black; background-color: #618B25; color: white;">
-					<div class="tile-title">
-						PDF Client Project - Python
-					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-						
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								PDF Thing description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about the PDF Thing...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
-					</div>
-				</div>
-
-				<!-- AI Thing? -->
-				<div class="tile-wrapper" style="--hover-color: black; background-color: #232020; color: white;">
-					<div class="tile-title">
-						AI Project? - N/A
-					</div>
-					<div class="portfolio-tile">
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-						</div>
-						
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								AI Thing description...
-							</div>
-						</div>
-
-						<!-- Slide #2 -->
-						<div class="tile-content">
-							<div class="tile-graphic">
-								<img src="images/elementor-placeholder-image.png" alt="">
-							</div>
-							<div class="tile-text">
-								More stuff about this AI thing...
-							</div>
-						</div>
-
-						<!-- Add More Slides Below -->
-
-						<div class="arrow">
-							<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-						</div>
-					</div>
-				</div>
-            </div>
 		</div>
-
-		<!-- Footer -->
-		<footer>
-			<div class="footer-wrapper">
-				<div>
-					<h1 class="footer-title">ABOUT</h1>
-					<p>Explore a showcase of my projects, skills, and creative coding solutions.</p>
-				</div>
-				<div class="footer-pages">
-					<h1 class="footer-title">PAGES</h1>
-					<a href="#">About</a>
-					<a href="#">Portfolio</a>
-					<a href="#">GitHub</a>
-					<a href="#">Resume</a>
-				</div>
-				<div>
-					<h1 class="footer-title">CONTACT</h1>
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></a>
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a>
-				</div>
-			</div>
-		</footer>
 		
 		</body>
 	
