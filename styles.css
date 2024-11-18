@@ -20,14 +20,22 @@ body {
   flex: 1;
 }
 .container__home {
-  background-image: url(images/19742.jpg);
+  background-image: url(images/webb.png);
   background-position: center;
-  background-size: cover;
+  background-size: auto;
+  background-repeat: repeat;
 }
 .container__about {
-  background-image: url(images/19742.jpg);
+  background-image: url(images/webb.png);
   background-position: center;
-  background-size: cover;
+  background-size: auto;
+  background-repeat: repeat;
+}
+.container__resume {
+  background-image: url(images/webb.png);
+  background-position: center;
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 /* ------ N A V I G A T I O N   S T Y L E S ------ */
@@ -182,7 +190,7 @@ li:hover .menu-icon {
   width: 100%;
   max-width: 1920px;
   height: 400px;
-  background-image: url(images/FvI2Jz1WAAYQ5i1.jpg);
+  background-image: url(images/msi.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -223,6 +231,45 @@ li:hover .menu-icon {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* ------ RESUME ------ */
+.resume__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+}
+.resume__section {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.resume__section__pdf__wrapper {
+  width: 60%;
+  height: auto;
+  display: flex;
+}
+.resume__section__pdf__wrapper img {
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px black;
+}
+.resume__section__buttons {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.resume__section__buttons__wrapper {
+  width: 40%;
+  height: auto;
+  padding: 100px;
 }
 
 .main-wrapper {
