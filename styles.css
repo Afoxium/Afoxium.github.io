@@ -31,6 +31,9 @@ body {
   background-size: auto;
   background-repeat: repeat;
 }
+.container__portfolio {
+  background-color: gray;
+}
 .container__resume {
   background-color: black;
   position: relative;
@@ -47,6 +50,9 @@ body {
   background-repeat: repeat;
   opacity: 0.5;
   z-index: -1;
+}
+.container__contact {
+  background-color: gray;
 }
 
 /* ------ N A V I G A T I O N   S T Y L E S ------ */
@@ -320,186 +326,59 @@ li:hover .menu-icon {
   margin-top: 20px;
 }
 
-.main-wrapper {
-  width: 100%;
-  background-color: #292d35;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.main-wrapper-2 {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  max-width: 1600px;
-}
-
-.main {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.left-content {
-  width: 30%;
-}
-
-.left-content h1 {
-  font-size: 50px;
-  text-wrap: nowrap;
-}
-
-.profile-picture {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-picture img {
-  width: 100%;
-  height: auto;
-  max-height: 540px;
-  max-width: 540px;
-}
-
-.right-content {
-  width: 30%;
-}
-
-.right-content h1 {
-  font-size: 50px;
-  text-wrap: nowrap;
-}
-
 /* ------ P O R T F O L I O ------ */
-.intro-text {
-  color: #E7ECEF;
+.portfolio__wrapper {
+  margin-top: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__text {
+  color: white;
+  font-size: 40px;
+}
+
+.contact__wrapper {
+  width: 100%;
   margin: 0 auto;
+  max-width: 1000px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+}
+.contact__section {
+  margin-top: 100px;
+  display: flex;
   flex-direction: column;
-  padding: 100px 0 100px 0;
-  flex-basis: 50%;
-  height: 100%;
-}
-
-.intro-text h3 {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.intro-text h2 {
-  font-weight: 400;
-}
-
-.intro-text h1 {
-  font-weight: 600;
-  color: #CA054D;
-  text-shadow: 1px 1px 2px black;
-}
-
-.intro-text p {
-  font-size: 15px;
-  max-width: 80%;
-  padding-top: 20px;
-}
-
-.intro-pic {
-  flex-basis: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.intro-pic img {
-  width: 75%;
-  height: auto;
-}
-
-.portfolio-tile-wrapper {
-  background-color: #0F7173;
-  height: auto;
-}
-
-.portfolio-tile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 500px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.tile-wrapper {
-  padding: 100px 200px 100px;
-}
-
-.tile-title {
-  font-size: 75px;
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-}
-
-.tile-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   width: 100%;
   height: 100%;
+  color: white;
 }
-
-.tile-graphic {
-  width: 60%;
-  max-height: 400px;
+.contact__section__info {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.contact__section__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact__section__header h1 {
+  font-size: 50px;
+}
+.contact__section__type {
+  margin-left: 10px;
+}
+.contact__section__icon {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular button style */
+  background-color: ghostwhite;
 }
-
-.tile-graphic img {
-  width: 70%;
-  height: auto;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.tile-text {
-  width: 40%;
-  max-height: 200px;
-  overflow: hidden;
-  padding-right: 20px;
-  font-size: 18px;
+.contact__section__text__thin {
   font-weight: 300;
-}
-
-/* Arrow Styling */
-.arrow {
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.arrow-icon {
-  fill: currentColor;
-  transition: fill 0.3s ease;
-}
-
-.arrow svg {
-  width: 75px;
-  height: auto;
-}
-
-.tile-wrapper .arrow:hover .arrow-icon {
-  fill: var(--hover-color);
 }
 
 /* ------ F O O T E R ------ */
