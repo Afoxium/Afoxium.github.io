@@ -32,10 +32,21 @@ body {
   background-repeat: repeat;
 }
 .container__resume {
-  background-image: url(images/webb.png);
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+.container__resume::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/pixel_weave.png);
   background-position: center;
   background-size: auto;
   background-repeat: repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 /* ------ N A V I G A T I O N   S T Y L E S ------ */
@@ -242,7 +253,7 @@ li:hover .menu-icon {
   flex-direction: row;
 }
 .resume__section {
-  margin: 100px;
+  margin: 100px 0px;
   display: flex;
   flex-direction: row;
 }
@@ -250,26 +261,63 @@ li:hover .menu-icon {
   width: 60%;
   height: auto;
   display: flex;
+  margin: 0 100px;
 }
 .resume__section__pdf__wrapper img {
   width: 100%;
   height: auto;
   box-shadow: 10px 10px black;
 }
+.resume__section__info {
+  display: flex;
+  flex-direction: column;
+}
+.resume__section__text {
+  margin: 50px auto 0 0;
+  font-size: 20px;
+  border-bottom: 1px solid #000000;
+}
 .resume__section__buttons {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 2px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
   display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
   font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 24px 56px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.resume__section__buttons:hover,
+.resume__section__buttons :active {
+  background-color: white;
+  background-position: 0 0;
+  border-color: white;
+  color: #FF4742;
+}
+.resume__section__buttons:active {
+  opacity: 0.5;
 }
 .resume__section__buttons__wrapper {
   width: 40%;
-  height: auto;
-  padding: 100px;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
 }
 
 .main-wrapper {

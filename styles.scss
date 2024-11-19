@@ -34,11 +34,23 @@ body {
         background-repeat: repeat;
     }
 
-    &__resume{
-        background-image: url(images/webb.png);
-        background-position: center;
-        background-size: auto;
-        background-repeat: repeat;
+    &__resume {
+        background-color: black;
+        position: relative;
+        z-index: 1;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(images/pixel_weave.png);
+            background-position: center;
+            background-size: auto;
+            background-repeat: repeat;
+            opacity: 0.50;
+            z-index: -1;
+        }
     }
 }
 
@@ -267,7 +279,7 @@ li:hover .menu-icon{
     }
 
     &__section{
-        margin: 100px;
+        margin: 100px 0px;
         display: flex;
         flex-direction: row;
 
@@ -276,6 +288,7 @@ li:hover .menu-icon{
                 width: 60%;
                 height: auto;
                 display: flex;
+                margin: 0 100px;
     
                 img{
                     width: 100%;
@@ -285,20 +298,59 @@ li:hover .menu-icon{
             }
         }
 
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text{
+            margin: 50px auto 0 0;
+            font-size: 20px;
+            border-bottom: 1px solid #000000;
+        }
+
         &__buttons{
-            background-color: #04AA6D;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
+            background: #FF4742;
+            border: 1px solid #FF4742;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 2px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
             display: inline-block;
+            font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
             font-size: 16px;
+            font-weight: 800;
+            line-height: 16px;
+            min-height: 40px;
+            outline: 0;
+            padding: 24px 56px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            margin-right: 10px;
+            
+            &:hover,
+            :active {
+              background-color: white;
+              background-position: 0 0;
+              border-color: white;
+              color: #FF4742;
+            }
+            
+            &:active {
+              opacity: .5;
+            }
 
             &__wrapper{
                 width: 40%;
-                height: auto;
-                padding: 100px;
+                align-items: center;
+                display: flex;
+                margin-top: 20px;
             }
         }
     }
