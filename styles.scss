@@ -58,7 +58,22 @@ body {
     }
 
     &__contact{
-        background-color: gray;
+        background-color: black;
+        position: relative;
+        z-index: 1;
+    
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(images/pixel_weave.png);
+            background-position: center;
+            background-size: auto;
+            background-repeat: repeat;
+            opacity: 0.50;
+            z-index: -1;
+        }
     }
 }
 
