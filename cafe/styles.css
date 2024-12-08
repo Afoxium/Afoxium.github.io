@@ -1,1 +1,223 @@
-/*# sourceMappingURL=styles.css.map */
+/* ------ F O N T S ------ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* ------ G L O B A L   S T Y L E S ------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #E7DECD;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+.header__section {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/47th\ street\ header.jpg);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.header__section img {
+  height: 100%;
+  width: auto;
+}
+
+/* Main content container */
+.container {
+  flex: 1;
+}
+
+/* ------ H O M E ------ */
+.home__wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.home__section {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 6000px;
+}
+.home__coffee__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+}
+.home__coffee__img {
+  margin: 10% 20%;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.home__coffee__img__wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__coffee__text {
+  color: white;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 90%;
+  margin-left: 30%;
+}
+.home__coffee__text__wrapper {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.home__menu__wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 300px auto;
+}
+.home__menu__section {
+  background-color: #e4cc99;
+  height: 4500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__menu__title {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 800;
+  color: #1d1304;
+}
+.home__menu__title__subcategory {
+  width: 100%;
+  max-width: 1100px;
+  color: #1d1304;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 800;
+}
+.home__menu__separator {
+  width: 100%;
+  max-width: 1100px;
+  color: #1d1304;
+}
+.home__menu__separator__internal {
+  width: 100%;
+  max-width: 1000px;
+  color: rgba(29, 19, 4, 0.2274509804);
+}
+.home__menu__item {
+  width: 50%;
+  background-color: wheat;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.home__menu__item__wrapper {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.home__menu__item img {
+  max-width: 175px;
+  max-height: 130px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home__menu__item__text__wrapper {
+  width: 100%;
+  padding: 10px;
+}
+.home__menu__item__name-price-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.home__menu__item__price {
+  margin-left: auto;
+  color: #F51735;
+  font-size: 15px;
+  font-weight: 600;
+}
+.home__menu__item__description {
+  padding-top: 10px;
+  color: rgb(37, 37, 37);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* ------ F O O T E R ------ */
+footer {
+  background-color: #e4cc99;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__wrapper {
+  margin: auto;
+  width: 65%;
+  max-width: 1200px;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.footer__section {
+  flex: 1;
+}
+.footer__section--about {
+  border-right: 1px solid #fff;
+}
+.footer__section--about p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.footer__section--pages {
+  margin-left: 50px;
+  border-right: 1px solid #fff;
+}
+.footer__section--contact {
+  margin-left: 50px;
+}
+.footer__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.footer__link {
+  display: inline-block;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+.footer__contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular button style */
+  background-color: gray;
+}/*# sourceMappingURL=styles.css.map */

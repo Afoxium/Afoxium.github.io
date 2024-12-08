@@ -1,0 +1,272 @@
+/* ------ F O N T S ------ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------ G L O B A L   S T Y L E S ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #E7DECD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// ------- H E A D E R -------
+.header{
+    &__wrapper{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+    }
+
+    &__section{
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(images/47th\ street\ header.jpg);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        & img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+/* Main content container */
+.container {
+    flex: 1;
+
+}
+
+/* ------ H O M E ------ */
+.home {
+    &__wrapper{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    &__section{
+        background-image: url(images/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 6000px;
+    }
+
+    &__coffee{
+
+        &__wrapper{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1600px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__img{
+            margin: 10% 20%;
+            height: auto;
+            width: 100%;
+            display: block;
+
+            &__wrapper{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__text{
+            color: white;
+            font-size: 100px;
+            font-weight: 800;
+            line-height: 90%;
+            margin-left: 30%;
+
+            &__wrapper{
+                width: 40%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    &__menu{
+        
+        &__wrapper{
+            width: 100%;
+            max-width: 1600px;
+            margin: 300px auto
+        }
+
+        &__section{
+            background-color: #e4cc99;
+            height: 4500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title{
+            margin: 50px 0;
+            text-align: center;
+            font-size: 200px;
+            font-weight: 800;
+            color: #1d1304;
+
+            &__subcategory{
+                width: 100%;
+                max-width: 1100px;
+                color: #1d1304;
+                text-align: left;
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+
+        &__separator{
+            width: 100%;
+            max-width: 1100px;
+            color: #1d1304;
+
+            &__internal{
+                width: 100%;
+                max-width: 1000px;
+                color: #1d13043a;
+            }
+        }
+
+        &__item{
+            width: 50%;
+            background-color: wheat;
+            height: 150px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+            &__wrapper{
+                width: 100%;
+                max-width: 1100px;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+            }
+
+            & img {
+                max-width: 175px;
+                max-height: 130px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &__text{
+                &__wrapper{
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+
+            &__name-price-wrapper{
+                display: flex;
+                flex-direction: row;
+            }
+
+            &__name{
+
+            }
+
+            &__price{
+                margin-left: auto;
+                color: #F51735;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            &__description{
+                padding-top: 10px;
+                color: rgb(37, 37, 37);
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/* ------ F O O T E R ------ */
+footer {
+    background-color: #e4cc99;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    &__wrapper{
+        margin: auto;
+        width: 65%;
+        max-width: 1200px;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+  
+    &__section{
+        flex: 1;
+
+        &--about{
+            border-right: 1px solid #fff;
+
+            p{
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+  
+        &--pages{
+            margin-left: 50px; 
+            border-right: 1px solid #fff;
+        }
+  
+        &--contact{
+            margin-left: 50px;   
+        }
+    }
+  
+    &__title{
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+  
+    &__link{
+        display: inline-block;
+        padding-right: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        font-size: 12px;
+    }
+  
+    &__contact-link{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* Circular button style */
+        background-color: gray;
+    }
+}
