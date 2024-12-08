@@ -16,6 +16,27 @@ body {
     min-height: 100vh;
 }
 
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+
 // ------- H E A D E R -------
 .header{
     &__wrapper{
@@ -206,11 +227,14 @@ body {
 
 /* ------ F O O T E R ------ */
 footer {
-    background-color: #161f14;
+    background-color: #0c110b;
     padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .footer {
