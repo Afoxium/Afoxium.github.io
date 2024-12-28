@@ -1,0 +1,487 @@
+/*Summary:
+
+font-size: rem
+width: % in combination with a max-width, ch
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em, kevin often uses em for padding of buttons
+media queries: em
+
+px only for little things like shadows, borders etc.
+*/
+
+/* ------ F O N T S ------ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #545356;
+}
+
+ul{
+    list-style: none;
+}
+
+.icon{
+    width:1.5rem;
+    margin-right: 0.25rem;
+
+    &-clock{
+        background-image: url(./images/clock.svg);
+    }
+}
+
+.btn{
+    padding: 0.657rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &__wrapper{
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__wide{
+        padding: 0.657rem 3rem;
+    }
+
+    &__primary{
+        background-color: #607768;
+        color: white;
+    }
+
+    &__secondary{
+        background-color: #e0e9e3;
+        color: #3d454d;
+    }
+}
+
+.container{
+    width: 100%;
+    max-width: 97.5rem;
+    margin: 0 auto;
+}
+
+.header{
+
+    &__top{
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+
+        &-buttons{
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+        transform: translateX(-50%);
+        left: 50%;
+
+        img{
+            max-width: 400px;
+        }
+    }
+
+    &__button{
+        background-color: #e0e9e3;
+    }
+}
+
+.nav{
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+
+        a{
+            color: #3d454d;
+        }
+
+        li{
+            padding: 0.5rem;
+        }
+    }
+}
+
+.pub-info-bar{
+    background-color: #f2b63f;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a{
+        padding: 0.5rem;
+    }
+
+    &__location{
+        font-weight: 600;
+    }
+}
+
+main{
+    flex: 1;
+}
+
+.banner{
+    background-image: url(./images/banner.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    &__fill{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text{
+        padding-left: 1rem;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    a{
+        background-color: white;
+    }
+}
+
+.about{
+    padding-top: 5rem;
+    padding-bottom: 5.25rem;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__text{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        &__wrapper{
+            width: 42%;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            color: #607768;
+            font-size: 2rem;
+        }
+
+        p{
+            color: #545356;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__opening-hours{
+        &__wrapper{
+            width: 58%;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.tile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #607768;
+    color: white;
+    border-radius: 0.35rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    justify-content: center;
+    height: 8rem;
+
+    &__header{
+        margin: 0.5rem auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+        :last-child{
+            margin-left: auto;
+        }
+    }
+
+    &__content{
+        margin: 0.5rem auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+        :last-child{
+            margin-left: auto;
+        }
+    }
+}
+
+.gallery{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #E0E9E3;
+
+    &__wrapper{
+        width: 90%;
+        margin-right: auto;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__container{
+        display: flex;
+        position: relative;
+    }
+
+    &__description{
+        position: absolute;
+        width: 35%;
+        background-color: white;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 3rem;
+        border-radius: 0.25rem;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem 10%;
+
+            h1{
+                color: #607768;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                color: #545356;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.facilites{
+
+    &__container{
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__about{
+        width: 30%;
+        padding-right: 10rem;
+
+        h1{
+            color: #607768;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            color: #545356;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    &__tiles{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        &__row{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            &__tile{
+                display: flex;
+                margin: 1rem;
+                border: solid 0.1rem #54535633;
+                border-radius: 0.5rem;
+                flex: 1;
+                padding: 1rem;
+                flex-direction: column;
+                align-items: center;
+
+                h1{
+                    font-size: 1.1rem;
+                    margin-top: 0.5rem;
+                    color: #3d454d;
+                }
+
+                svg{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    fill: #3d454d;
+                }
+            }
+        }
+
+    }
+}
+
+.gallery2{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #E0E9E3;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tile{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        flex: 1;
+        overflow: hidden;
+
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        &__image{
+            background-color: #cccccc;
+            background-size: cover;
+            height: 30rem;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &__text{
+            margin: 1.25rem 1rem;
+
+            h1{
+                color: #607768;
+                margin-bottom: 1rem;
+            }
+    
+            p{
+                color: #545356;
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+}
+
+.footer{
+    background-color: #607768;
+    padding-top: 3rem;
+
+    h1{
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    p{
+        font-size: 1rem;
+        color: white;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+
+    &__logo{
+        width: 40%;
+
+        img{
+            width: 70%;
+        }
+    }
+
+    &__location{
+        margin-right: 10rem;
+
+        &__header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__about{
+
+        ul{
+            padding-top: 0.5rem;
+
+        }
+
+        li{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        a{
+            color: white;
+        }
+    }
+
+    &__nav{
+        padding: 1.5rem 0 1rem 2rem;
+        color: white;
+    }
+
+    svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.25rem;
+        fill: #ffffff;
+    }
+}
+
+hr{
+    color: white;   
+}
