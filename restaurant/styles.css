@@ -1,20 +1,28 @@
-/*Summary:
-
-font-size: rem
-width: % in combination with a max-width, ch
-height: question urself "do i rly need to set height" if yes -> use a min-height
-padding/margin: rem or em, kevin often uses em for padding of buttons
-media queries: em
-
-px only for little things like shadows, borders etc.
-*/
 /* ------ F O N T S ------ */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", serif;
+}
+
+.secondary-font {
+  font-family: "Playfair Display", serif;
+}
+
+.tertiary-font {
   font-family: "Noto Sans", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
 }
 
 a {
@@ -24,6 +32,17 @@ a {
 
 ul {
   list-style: none;
+}
+
+/* ------ C O L O U R S ------ */
+.off-black {
+  color: #2e353b !important;
+}
+
+/* ------ H E A D E R S ------ */
+h1, h2 {
+  color: #607768;
+  font-family: "Playfair Display", serif;
 }
 
 .icon {
@@ -48,12 +67,12 @@ ul {
   padding: 0.657rem 3rem;
 }
 .btn__primary {
-  background-color: #607768;
-  color: white;
+  background-color: #607768 !important;
+  color: white !important;
 }
 .btn__secondary {
-  background-color: #e0e9e3;
-  color: #3d454d;
+  background-color: #e0e9e3 !important;
+  color: #3d454d !important;
 }
 
 .container {
@@ -62,17 +81,17 @@ ul {
   margin: 0 auto;
 }
 
-.header__top {
+.site-header__top {
   display: flex;
   align-items: center;
   padding: 1rem 0;
 }
-.header__top-buttons {
+.site-header__top-button {
   display: flex;
   flex: 1;
   align-items: center;
 }
-.header__logo {
+.site-header__branding {
   display: flex;
   position: relative;
   flex: 1;
@@ -80,10 +99,10 @@ ul {
   transform: translateX(-50%);
   left: 50%;
 }
-.header__logo img {
+.site-header__branding img {
   max-width: 400px;
 }
-.header__button {
+.site-header__button {
   background-color: #e0e9e3;
 }
 
@@ -93,11 +112,14 @@ ul {
   flex-direction: row;
   gap: 2rem;
 }
-.nav__list a {
-  color: #3d454d;
-}
-.nav__list li {
+.nav__item {
   padding: 0.5rem;
+}
+.nav__link {
+  font-family: "Playfair Display", serif;
+  color: #2e353b;
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 .pub-info-bar {
@@ -109,6 +131,7 @@ ul {
 }
 .pub-info-bar a {
   padding: 0.5rem;
+  color: #2e353b;
 }
 .pub-info-bar__location {
   font-weight: 600;
@@ -126,10 +149,9 @@ main {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
 }
 .banner__fill {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   display: flex;
@@ -137,17 +159,21 @@ main {
 }
 .banner__text {
   padding-left: 1rem;
+  width: 35%;
 }
-.banner h1 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.banner h2 {
-  font-size: 1.75rem;
+.banner__text-primary-header {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: white;
 }
-.banner a {
-  background-color: white;
+.banner__text-secondary-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.banner__text-description {
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .about {
@@ -292,7 +318,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.facilites__tiles__row__tile h1 {
+.facilites__tiles__row__tile h3 {
   font-size: 1.1rem;
   margin-top: 0.5rem;
   color: #3d454d;

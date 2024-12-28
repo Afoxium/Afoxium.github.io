@@ -27,42 +27,46 @@
 	</head>
 
     <body>
-        <header class="header">
-            <div class="header__top container">
-                <div class="header__top-buttons">
-                    <div class="header__logo">
+        <header class="site-header">
+            <div class="site-header__top container">
+                <div class="site-header__top-button">
+                    <div class="site-header__branding">
                         <img src="./images/logo.png" alt="Restaurant Logo" fetchpriority="high" />
                     </div>
                     <div class="btn__wrapper">
-                        <a href="#" class="header__button btn">Book a Table</a>
+                        <a href="#" class="site-header__button btn">Book a Table</a>
                     </div>
                 </div>
             </div>
     
             <nav class="nav container">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#">Menu</a></li>
-                    <li class="nav__item"><a href="#">Book</a></li>
-                    <li class="nav__item"><a href="#">Find Us</a></li>
-                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="menu.html">Menu</a></li>
+                    <li class="nav__item"><a class="nav__link" href="bookings.html">Book</a></li>
+                    <li class="nav__item"><a class="nav__link" href="location.html">Find Us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
         <section class="pub-info-bar">
             <div class="pub-info-bar__container container">
                 <a href="" class="pub-info-bar__location">White House, Roundhay</a>
-                <a href="" class="pub-info-bar__hours">Open Today: 9:00am - 11:00pm</a>
+                <a href="" class="pub-info-bar__open-hours">Open Today: 9:00am - 11:00pm</a>
             </div>
         </section>
         
         <main>
             <section class="banner">
                 <div class="banner__fill">
-                    <div class="banner__text container">
-                        <h1>Come visit</h1>
-                        <h2>The White House</h2>
-                        <div class="btn__wrapper">
-                            <a href="" class="btn">Dine with Us</a>
+                    <div class="container">
+                        <div class="banner__text">
+                            <h2 class="banner__text-secondary-header">Welcome to</h2>
+                            <h1 class="banner__text-primary-header">The White House, Roundhay</h1>
+                            <p class="banner__text-description">A comforting country pub offering quality pub classics and seasonal chef’s specials. Cherish time together this cosy season over your new favourite dishes.</p>
+                            <div class="btn__wrapper">
+                                <a href="" class="btn btn__secondary btn__wide">Book now</a>
+                                <a href="" class="btn btn__primary btn__wide">Our menus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,37 +179,37 @@
                         <div class="facilites__tiles__row">
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM680-80v-200H480q-33 0-56.5-23.5T400-360v-240q0-33 23.5-56.5T480-680q24 0 41.5 10.5T559-636q55 66 99.5 90.5T760-520v80q-53 0-107-23t-93-55v138h120q33 0 56.5 23.5T760-300v220h-80Zm-280 0q-83 0-141.5-58.5T200-280q0-72 45.5-127T360-476v82q-35 14-57.5 44.5T280-280q0 50 35 85t85 35q39 0 69.5-22.5T514-240h82q-14 69-69 114.5T400-80Z"/></svg>
-                                <h1>Disabled Facilites</h1>
+                                <h3>Disabled Facilites</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M180-475q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180-160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm240 0q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180 160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM266-75q-45 0-75.5-34.5T160-191q0-52 35.5-91t70.5-77q29-31 50-67.5t50-68.5q22-26 51-43t63-17q34 0 63 16t51 42q28 32 49.5 69t50.5 69q35 38 70.5 77t35.5 91q0 47-30.5 81.5T694-75q-54 0-107-9t-107-9q-54 0-107 9t-107 9Z"/></svg>
-                                <h1>Dog Friendly</h1>
+                                <h3>Dog Friendly</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M720-720q-33 0-56.5-23.5T640-800q0-33 23.5-56.5T720-880q33 0 56.5 23.5T800-800q0 33-23.5 56.5T720-720ZM680-80v-320q0-40-20.5-72T607-522l35-103q8-25 29.5-40t48.5-15q27 0 48.5 15t29.5 40l102 305H800v240H680ZM500-500q-25 0-42.5-17.5T440-560q0-25 17.5-42.5T500-620q25 0 42.5 17.5T560-560q0 25-17.5 42.5T500-500ZM220-720q-33 0-56.5-23.5T140-800q0-33 23.5-56.5T220-880q33 0 56.5 23.5T300-800q0 33-23.5 56.5T220-720ZM140-80v-280H80v-240q0-33 23.5-56.5T160-680h120q33 0 56.5 23.5T360-600v240h-60v280H140Zm300 0v-160h-40v-160q0-25 17.5-42.5T460-460h80q25 0 42.5 17.5T600-400v160h-40v160H440Z"/></svg>
-                                <h1>Family Friendly</h1>
+                                <h3>Family Friendly</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200h280v-400h-80q-28 0-46 14t-43 41q-20 22-46.5 45.5T320-465v265Zm-80 80v-346q-52-14-86-56t-34-98q0-53 30.5-94t78.5-57q23-48 68.5-78T400-879q35 0 65.5 12t55.5 32q10-2 19-3.5t20-1.5q66 0 113 47t47 113q0 22-5.5 42T698-600h62q33 0 56.5 23.5T840-520v240q0 33-23.5 56.5T760-200h-80v80H240Zm-40-500q0 33 23.5 56.5T280-540q32 0 54.5-21t46.5-47q25-27 56.5-49.5T520-680h120q0-33-23.5-56.5T560-760q-25 0-42 6.5l-17 6.5-31-26q-11-9-28.5-17.5T400-799q-32 0-58.5 17T301-736l-14 30-32 11q-25 8-40 28.5T200-620Zm480 340h80v-240h-80v240Zm-360 80h280-280Z"/></svg>
-                                <h1>Beer Garden</h1>
+                                <h3>Beer Garden</h3>
                             </div>
                         </div>
                         <div class="facilites__tiles__row">
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200h280v-400h-80q-28 0-46 14t-43 41q-20 22-46.5 45.5T320-465v265Zm-80 80v-346q-52-14-86-56t-34-98q0-53 30.5-94t78.5-57q23-48 68.5-78T400-879q35 0 65.5 12t55.5 32q10-2 19-3.5t20-1.5q66 0 113 47t47 113q0 22-5.5 42T698-600h62q33 0 56.5 23.5T840-520v240q0 33-23.5 56.5T760-200h-80v80H240Zm-40-500q0 33 23.5 56.5T280-540q32 0 54.5-21t46.5-47q25-27 56.5-49.5T520-680h120q0-33-23.5-56.5T560-760q-25 0-42 6.5l-17 6.5-31-26q-11-9-28.5-17.5T400-799q-32 0-58.5 17T301-736l-14 30-32 11q-25 8-40 28.5T200-620Zm480 340h80v-240h-80v240Zm-360 80h280-280Z"/></svg>
-                                <h1>WiFi</h1>
+                                <h3>WiFi</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-120v-720h280q100 0 170 70t70 170q0 100-70 170t-170 70H400v240H240Zm160-400h128q33 0 56.5-23.5T608-600q0-33-23.5-56.5T528-680H400v160Z"/></svg>
-                                <h1>Car Park</h1>
+                                <h3>Car Park</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-120q-17 0-28.5-11.5T200-160v-82q-18-20-29-44.5T160-340v-380q0-83 77-121.5T480-880q172 0 246 37t74 123v380q0 29-11 53.5T760-242v82q0 17-11.5 28.5T720-120h-40q-17 0-28.5-11.5T640-160v-40H320v40q0 17-11.5 28.5T280-120h-40Zm242-640h224-448 224Zm158 280H240h480-80Zm-400-80h480v-120H240v120Zm100 240q25 0 42.5-17.5T400-380q0-25-17.5-42.5T340-440q-25 0-42.5 17.5T280-380q0 25 17.5 42.5T340-320Zm280 0q25 0 42.5-17.5T680-380q0-25-17.5-42.5T620-440q-25 0-42.5 17.5T560-380q0 25 17.5 42.5T620-320ZM258-760h448q-15-17-64.5-28.5T482-800q-107 0-156.5 12.5T258-760Zm62 480h320q33 0 56.5-23.5T720-360v-120H240v120q0 33 23.5 56.5T320-280Z"/></svg>
-                                <h1>Coaches Accepted</h1>
+                                <h3>Coaches Accepted</h3>
                             </div>
                             <div class="facilites__tiles__row__tile">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
-                                <h1>Offers Function</h1>
+                                <h3>Offers Function</h3>
                             </div>
                         </div>
                     </div>
@@ -272,9 +276,9 @@
                 <div class="footer__about">
                     <h1>The White House</h1>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Food and Drink</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="location.html">Contact Us</a></li>
+                        <li><a href="menu.html">Food and Drink</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
